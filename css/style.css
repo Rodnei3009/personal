@@ -33,7 +33,7 @@ body {
       border-radius: 0;
       margin-bottom: 0;
       font-size: 12px;
-      letter-spacing: 5px;
+      
       background-color: rgba(0,0,0,1.5);
   }
   .navbar-nav  li a:hover {
@@ -75,7 +75,9 @@ p { color: #ffffff;  }
 
 
 .panel {
-	
+	height: 370px;
+    padding-bottom: 10px;
+    background-color: inherit;
 	-webkit-perspective: 600px;
 	-moz-perspective: 600px;
 }
@@ -87,8 +89,6 @@ p { color: #ffffff;  }
 	
 .panel .front {
     
-    height: inherit;
-	z-index: 900;
 	text-align: center;
 	-webkit-transform: rotateX(0deg) rotateY(0deg);
 	   -moz-transform: rotateX(0deg) rotateY(0deg);
@@ -105,10 +105,8 @@ p { color: #ffffff;  }
 
 .panel .back {
     
-	height: inherit;
 	position: absolute;
 	top: 0;
-	z-index: 1000;
 	-webkit-transform: rotateY(-180deg);
 	   -moz-transform: rotateY(-180deg);
 	-webkit-transform-style: preserve-3d;
@@ -128,7 +126,7 @@ p { color: #ffffff;  }
 	-moz-transform: rotateY(180deg);
 }
 .panel.flip .back {
-	z-index: 1000;
+	z-index: 900;
 	-webkit-transform: rotateX(0deg) rotateY(0deg);
 	-moz-transform: rotateX(0deg) rotateY(0deg);
 }
